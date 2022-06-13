@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(https://images2.alphacoders.com/644/644456.jpg);
+  background-position: 30% 30%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-header {
+  margin: 0;
+  border: 0;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.552);
+  color: white;
+  font-family: Nanum Gothic Coding;
+  text-shadow: 0 2px #00000068;
+  backdrop-filter: blur(01px);
+}
+
+.main-header img {
+  display: flex;
+  align-content: center;
+}
+
+.main-header-content {
+  margin-top: 3rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.8rem;
+}
+
+.main-nav ul {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0%;
+  justify-content: space-evenly;
+  justify-items: center;
+  font-size: 1.3rem;
+  font-style: 400;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: 1.3rem;
+}
+
+.card {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.552);
+  backdrop-filter: blur(01px);
+  color: white;
+  font-family: Nanum Gothic Coding;
+}
+
+/* breakpoint */
+
+@media only screen and (min-width: 768px) {
+  .main-header {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.9rem;
+    padding: 0 50px 0 50px;
+    align-self: center;
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    font-weight: 400;
+  }
+
+  .main-header-content {
+    align-self: flex-end;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
