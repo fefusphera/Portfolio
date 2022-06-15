@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  text-shadow: 3px 3px 3px #00000068;
 }
 
 body {
@@ -16,6 +17,12 @@ body {
   border: 0;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.552);
+  /* background: rgb(67, 8, 106);
+  background: linear-gradient(
+    90deg,
+    rgba(67, 8, 106, 0.3989663461538462) 0%,
+    rgba(136, 42, 42, 0.3989663461538462) 100%
+  ); */
   color: white;
   font-family: Nanum Gothic Coding;
   text-shadow: 0 2px #00000068;
@@ -25,6 +32,12 @@ body {
 .main-header img {
   display: flex;
   align-content: center;
+  margin-top: 1rem;
+  border-radius: 60px;
+  height: 6rem;
+  width: 6rem;
+  object-fit: cover;
+  filter: contrast(150%) grayscale(100%);
 }
 
 .main-header-content {
@@ -34,6 +47,20 @@ body {
   flex-direction: row;
   justify-content: space-around;
   padding: 0.8rem;
+}
+
+.main-header-title {
+  display: flex;
+  flex-direction: column;
+}
+.main-header-content h1 {
+  margin-bottom: 0.7rem;
+  text-align: right;
+}
+.main-header-content p {
+  margin: 0;
+  text-align: right;
+  padding: 1px;
 }
 
 .main-nav ul {
@@ -54,6 +81,11 @@ body {
   margin: 1.3rem;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
 .card {
   margin-top: 1rem;
   padding: 0.9rem;
@@ -62,13 +94,62 @@ body {
   backdrop-filter: blur(01px);
   color: white;
   font-family: Nanum Gothic Coding;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h3 {
+  border-top: 1px solid white;
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-gallery-illustration {
+  display: flex;
+  flex-direction: column;
+}
+.main-gallery-photograph {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-gallery-illustration img {
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.main-gallery-photograph img {
+  margin: 0.5rem;
+  border-radius: 10px;
+  height: 300px;
+  width: 200px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.main-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main-contact img {
+  height: 50px;
+  width: 50px;
 }
 
 /* breakpoint */
 
 @media only screen and (min-width: 768px) {
   .main-header {
-    height: 500px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,5 +168,30 @@ body {
     align-self: flex-end;
     align-items: center;
     justify-content: space-around;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-gallery-illustration {
+    margin: 0.5rem;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-gallery-photograph {
+    margin: 0.5rem;
+    border-radius: 10px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: row;
   }
 }
