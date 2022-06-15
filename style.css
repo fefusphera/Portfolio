@@ -29,6 +29,15 @@ body {
   backdrop-filter: blur(01px);
 }
 
+.main-header-content {
+  margin-top: 3rem;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.8rem;
+}
+
 .main-header img {
   display: flex;
   align-content: center;
@@ -38,15 +47,6 @@ body {
   width: 6rem;
   object-fit: cover;
   filter: contrast(150%) grayscale(100%);
-}
-
-.main-header-content {
-  margin-top: 3rem;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0.8rem;
 }
 
 .main-header-title {
@@ -165,9 +165,8 @@ body {
   }
 
   .main-header-content {
-    align-self: flex-end;
     align-items: center;
-    justify-content: space-around;
+    margin-top: 0.9rem;
   }
 
   .card {
@@ -178,20 +177,22 @@ body {
   .main-gallery-illustration {
     margin: 0.5rem;
     border-radius: 10px;
-    height: 300px;
-    width: 200px;
+    /* height: 300px;
+    width: 200px; */
     object-fit: cover;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .main-gallery-photograph {
     margin: 0.5rem;
     border-radius: 10px;
-    height: 300px;
-    width: 200px;
+    /* height: 300px;
+    width: 200px; */
     object-fit: cover;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 }
